@@ -1,0 +1,41 @@
+{
+  "name": "@react-starter/eslint-config",
+  "version": "1.0.0",
+  "description": "A basic, opinionated eslint config for getting a React app up and running quickly!",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": ">= 3",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-jest-formatting": "^1.2.0",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.10.0",
+    "eslint-plugin-you-dont-need-momentjs": "^1.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-starter/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "react",
+    "es2015",
+    "es6",
+    "esnext",
+    "es2020"
+  ],
+  "author": "Austin Christensen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react-starter/eslint-config/issues"
+  },
+  "homepage": "https://github.com/react-starter/eslint-config#readme",
+  "devDependencies": {
+    "eclint": "^2.8.1",
+    "eslint": "^6.8.0"
+  }
+}

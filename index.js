@@ -1,20 +1,20 @@
 module.exports = {
 	"parserOptions": {
 		"ecmaVersion": 11,
-		"sourceType": "script",
+		"sourceType": "module",
 		"ecmaFeatures": {
 			"jsx": true
 		}
 	},
-	extends: [
+	"extends": [
 		"eslint:recommended",
 		"plugin:react/recommended",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:import/typescript",
 		"plugin:you-dont-need-lodash-underscore/compatible"
 	],
-	parser: "@typescript-eslint/parser",
-	plugins: [
+	"parser": "@typescript-eslint/parser",
+	"plugins": [
 		"react",
 		"react-hooks",
 		"@typescript-eslint",
@@ -22,13 +22,13 @@ module.exports = {
 		"jsx-a11y",
 		"jest-formatting"
 	],
-	settings: {
-		react: {
-			version: "detect"
+	"settings": {
+		"react": {
+			"version": "detect"
 		},
 		"import/resolver": {
-			node: {
-				extensions: [
+			"node": {
+				"extensions": [
 					".js",
 					".jsx",
 					".ts",
@@ -40,15 +40,15 @@ module.exports = {
 			}
 		}
 	},
-	env: {
+	"env": {
 		"jest": true,
 		"browser": true
 	},
-	globals: {
+	"globals": {
 		"process": true,
 		"module": true
 	},
-	rules: {
+	"rules": {
 		"@typescript-eslint/interface-name-prefix": [
 			"error",
 			"always"
@@ -275,12 +275,9 @@ module.exports = {
 			"logical": "ignore",
 			"prop": "ignore"
 		}],
-//    "react/jsx-one-expression-per-line": 1,
 		"react/jsx-closing-bracket-location": [2, "tag-aligned"],
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": "warn",
-		// the suggested improvement does not account for nested props, ie omit(bigObject, 'omit.nested.value')
-		// which means omit() is still of use, especially in tests where we manipulate/reset state
 		"you-dont-need-lodash-underscore/omit": "off",
 		"jest-formatting/padding-around-before-each-blocks": 2,
 		"jest-formatting/padding-around-before-all-blocks": 2,
@@ -289,13 +286,13 @@ module.exports = {
 		"jest-formatting/padding-around-describe-blocks": 2,
 		"jest-formatting/padding-around-test-blocks": 2
 	},
-	overrides: [
+	"overrides": [
 		{
-			files: [
+			"files": [
 				"*.test.js",
 				"*.js"
 			],
-			rules: {
+			"rules": {
 				"@typescript-eslint/explicit-function-return-type": [
 					"off"
 				],
@@ -305,11 +302,11 @@ module.exports = {
 			}
 		},
 		{
-			files: ["config/**/*.js", "scripts/**/*.js"],
-			globals: {
+			"files": ["config/**/*.js", "scripts/**/*.js"],
+			"globals": {
 				"__dirname": true
 			},
-			rules: {
+			"rules": {
 				"import/no-extraneous-dependencies": ["off"],
 				"@typescript-eslint/no-var-requires": ["off"],
 				"@typescript-eslint/camelcase": ["off"],
@@ -317,13 +314,13 @@ module.exports = {
 			}
 		},
 		{
-			files: [
+			"files": [
 				"**/data/**/*.js",
 				"**/data/**/*.ts",
 				"**/*Data.ts",
 				"**/*Data.js"
 			],
-			rules: {
+			"rules": {
 				"max-len": "off"
 			}
 		}

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A basic, opinionated eslint config for getting a React app up and running quickly!",
   "main": "index.js",
-  "peerDependencies": {
-    "eslint": ">= 3",
+  "dependencies": {
+    "eslint": "^6.8.0",
     "@typescript-eslint/parser": "^2.26.0",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
@@ -39,6 +39,6 @@
     "eslint": "^6.8.0"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
